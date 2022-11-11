@@ -1,0 +1,355 @@
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+.navbar {
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+#pavadinimas {
+  color: white;
+  float: left;
+  font-size: 31px;
+}
+
+h1 {
+  border-bottom: 2px solid rgb(31, 78, 56);
+
+  text-align: center;
+}
+
+/* ************** */
+/* ************** */
+/* Filter mygtuku vizualizacija  */
+/* ************** */
+/* ************** */
+.filter-container {
+  width: 100%;
+  display: flex;
+  /* margin-top: 40px; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.input-container {
+  position: relative;
+  height: 2rem;
+  width: 7rem;
+  margin: 0.5rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  transition: all 0.2s linear;
+}
+
+.input-container input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+
+.input-container .radio-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  /* border-radius: 8px; */
+  transition: all 300ms ease;
+}
+input:checked + .radio-tile {
+  background-color: black;
+  box-shadow: 0 0 8px black;
+  color: white;
+}
+
+.input-container:hover {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.btn-filter {
+  border-bottom: 1px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  transition: all 0.2s;
+  padding: 5px 25px;
+  background-color: white;
+}
+
+.pagr-filter {
+  border: 1px solid black;
+  transition: all 0.2s;
+  padding: 5px 25px;
+  color: white;
+  background-color: black;
+}
+
+.pagr-filter:hover {
+  background-color: white;
+  color: black;
+}
+/* ************** */
+/* ************** */
+/* filter formu viz  */
+/* ************** */
+/* ************** */
+
+.fromto {
+  width: 80px;
+}
+
+.d-flex {
+  gap: 20px;
+}
+
+.filter-form {
+  border-bottom: 1px solid rgb(180, 177, 177, 0.89);
+}
+
+/* ************** */
+/* ************** */
+/* Itemu vizualizacija  */
+/* ************** */
+/* ************** */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.itemas {
+  padding: 2%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #888; */
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  border: 1px solid rgba(180, 177, 177, 0.89);
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-radius: 10px;
+}
+
+.itemas:hover {
+  border: 1px solid rgba(71, 71, 71, 0.89);
+}
+h4 {
+  text-align: center;
+}
+.img-container {
+  width: 90%;
+  height: 150px;
+}
+
+.item-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: flex-end; */
+}
+
+.itemas img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.itemas p {
+  font-size: 15px;
+  color: grey;
+  text-align: center;
+}
+/* ************** */
+/* ************** */
+/* FORM DESIGN */
+/* ************** */
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background-color: rgb(241, 241, 241);
+  box-shadow: none;
+  border-radius: 0;
+  transition: all 0.5s linear;
+}
+
+.form-control:focus {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  box-shadow: none;
+}
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rusiuoti {
+  margin-top: 30px;
+}
+
+/* ************** */
+/* ************** */
+/* All Button  designs */
+/* ************** */
+
+.search-button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  text-align: center;
+  padding: 2px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn-show-form {
+  padding: 10px 10px;
+  text-align: center;
+  width: 20%;
+  color: black;
+  text-decoration: none;
+  border-left: 1px solid black;
+  border-right: 1px solid rgb(216, 216, 216);
+  border-bottom: 1px solid rgb(216, 216, 216);
+  border-top: 1px solid black;
+  transition: all 0.3s ease-in;
+}
+
+.btn-show-form:hover {
+  color: grey;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgb(216, 216, 216);
+  border-left: 1px solid rgb(216, 216, 216);
+  border-right: 1px solid black;
+}
+
+.hidden {
+  display: none;
+}
+
+.edit-btns-container {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+
+.btn-edit {
+  border: 1px solid black;
+  transition: all 0.2s;
+  padding: 5px 25px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.btn-edit:hover {
+  background-color: rgb(31, 78, 56);
+  color: white;
+}
+
+.btn-delete {
+  border: 1px solid black;
+  transition: all 0.2s;
+  padding: 5px 25px;
+  color: white;
+  background-color: rgb(119, 107, 107);
+  border-radius: 5px;
+}
+
+.btn-delete:hover {
+  background-color: rgb(122, 3, 3);
+}
+
+.btn-save,
+.btn-update {
+  border: 1px solid black;
+  transition: all 0.2s;
+  padding: 5px 25px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.btn-save:hover,
+.btn-update:hover {
+  background-color: rgb(31, 78, 56);
+  color: white;
+}
+
+/*  */
+/*  */
+/* MEDIA QUERIES */
+/*  */
+/*  */
+
+@media (max-width: 1400px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .btn-show-form {
+    width: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .img-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-show-form {
+    width: 45%;
+  }
+  .itemas {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
